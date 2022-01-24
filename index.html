@@ -1,31 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title> Pagina Web</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Satisfy&family=Vollkorn&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Página Web</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-            <h1>Veterinaria</h1>
-            </div>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Acerca</a></li>
-                <li><a href="#">Proceso</a></li>
-                <li><a href="#">Testimonios</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-            <i class="fas fa-bars fa-9x icono" id="menu"></i>
-        </nav>
-    </header>
-    <script src="app.js"></script>
+  <header class="encabezado">
+    <nav class="barra-navegacion">
+      <div class="logo">
+        <h1 class="nombre-empresa">Veterinaria</h1>
+      </div>
+      <ul class="barraNav-lista">
+        <li class="barraNav-elementos"><a href="#">Inicio</a></li>
+        <li class="barraNav-elementos"><a href="#">Acerca</a></li>
+        <li class="barraNav-elementos"><a href="#">Testimonios</a></li>
+        <li class="barraNav-elementos"><a href="#">Contacto</a></li>
+      </ul>
+      <i class="fas fa-bars fa-9x icono" id="menu"></i>
+    </nav>
+    <div class="contenido-header">
+      <h2 class="titulosec">Un título con contenido</h2>
+      <p class="parrafo-principal">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+        recusandae in quis eveniet beatae, aut earum neque delectus nesciunt,
+        nulla ex ipsam. Ratione, mollitia qui? Exercitationem, suscipit
+        tempora. Error, eos!
+      </p>
+      <form class="formulario-inscripcion">
+        <input class="email" type="email" />
+        <button class="suscribirse" type="button">Suscribirse</button>
+      </form>
+    </div>
+  </header>
+  <section class="acerca">
+    <div class="contenedor-acerca">
+      <div class="quienes-somos">
+        <h3 class="titulos">Compañia</h3>
+        <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+          recusandae in quis eveniet beatae, aut earum neque delectus nesciunt,
+          nulla ex ipsam. Ratione, mollitia qui? Exercitationem, suscipit
+          tempora. Error, eos!</h4>
+        <br />
+        <img class="foto-acerca"
+          src="https://www.clinicaveterinariaejea.com/wp-content/uploads/2020/03/Equipo-Clinica-Veterinaria-Ejea-1-480x300.jpeg"
+          alt="Foto del equipo" />
+      </div>
+      <div class="historia">
+        <h3 class="titulos">Historia</h3>
+        <br />
+        <h4 class="subtitulos">Quienes somos?</h4>
+        <br />
+        <p class="parrafo">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+          recusandae in quis eveniet beatae, aut earum neque delectus nesciunt,
+          nulla ex ipsam. Ratione, mollitia qui? Exercitationem, suscipit
+          tempora. Error, eos!</p>
+        <button class="btn">Leer más</button>
+      </div>
+      <div class="mision-vision">
+        <h3 class="titulos">Misión / Visión</h3>
+        <br />
+        <h4 class="subtitulos">Mision</h4>
+        <br />
+        <p class="parrafo">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+          recusandae in quis eveniet beatae, aut earum neque delectus nesciunt,
+          nulla ex ipsam. Ratione, mollitia qui? Exercitationem, suscipit
+          tempora. Error, eos!</p>
+        <h4 class="subtitulos">Vision</h4>
+        <br />
+        <p class="parrafo">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos
+          recusandae in quis eveniet beatae, aut earum neque delectus nesciunt,
+          nulla ex ipsam. Ratione, mollitia qui? Exercitationem, suscipit
+          tempora. Error, eos!</p>
+        <br>
+        <button class="btn">Leer más</button>
+
+      </div>
+    </div>
+  </section>
+  <section class="testimonios">
+    <div class="contenedor-testimonio">
+      <div class="tarjeta-testimonio">
+        <div class="datos-cliente">
+          <div class="foto-cliente">
+            <img class="foto-perfil"
+              src="https://okdiario.com/img/2021/01/04/-por-que-tu-perro-se-comporta-de-diferente-forma-con-varias-personas_-1-655x368.jpg"
+              alt="foto de cliente">
+          </div>
+          <div class="nombre-cliente">
+            <h4 class="subtitulos">Ericka Ramos</h4>
+            <h4 class="subtitulos">erickaramos12@gmail.com</h4>
+          </div>
+        </div>
+        <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque sequi, veritatis fuga
+          voluptate mollitia cupiditate voluptatibus maxime beatae nesciunt eum laborum assumenda amet in dolorem quae
+          modi reiciendis nostrum? Ut. </p>
+      </div>
+      <div class="tarjeta-testimonio">
+        <div class="datos-cliente">
+          <div class="foto-cliente">
+            <img class="foto-perfil" src="https://wakyma.com/blog/wp-content/uploads/2017/02/5-enfermedades-que-transmiten-los-perros-a-las-personas.jpg"
+              alt="foto de cliente">
+          </div>
+          <div class="nombre-cliente">
+            <h4 class="subtitulos">Esteban Perez</h4>
+            <h4 class="subtitulos">eperez34@hotmail.com</h4>
+          </div>
+        </div>
+        <p class="parrafo">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque sequi, veritatis fuga
+          voluptate mollitia cupiditate voluptatibus maxime beatae nesciunt eum laborum assumenda amet in dolorem quae
+          modi reiciendis nostrum? Ut. </p>
+      </div>
+    </div>
+  </section>
+  <section class="contacto">
+    <h3 class="titulos">Contáctanos</h3>
+    <form class="formulario-contacto">
+      <h4 class="subtitulos">Nombre completo</h4>
+      <input type="text" placeholder="Escriba su nombre">
+      <h4 class="subtitulos">Correo electronico</h4>
+      <input type="email" placeholder="Escriba su email">
+      <h4 class="subtitulos">Consulta</h4>
+      <textarea> Escriba su mensaje</textarea>
+      <button class="btn"> Contactar</button>
+    </form>
+  </section>
+  <footer class="pie-de-pagina">
+    <p>Hecho por Jose Lanza</p>
+    <a class="links" href="https://facebook.com"> <i class="fab fa facebook" </a>
+  </footer>
+  <script src="app.js"></script>
 </body>
+
 </html>

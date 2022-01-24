@@ -1,46 +1,52 @@
-@import url("https://fonts.googleapis.com/css2?family=Satisfy&family=Vollkorn&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dongle&display=swap");
+
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: "Vollkorn", serif;
-  color: aliceblue;
+  font-family: "Poppins", sans-serif;
+  color: white;
 }
-h1 {
+
+.nombre-empresa {
   font-size: 3.6rem;
 }
 
-header {
+.encabezado {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.6)),
-    url(https://entornosaludable.com/wp-content/uploads/2019/09/papelmatic-higiene-profesional-limpieza-desinfeccion-clinicas-veterinarias-980x617.jpg);
+    url(header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-nav {
+
+.barra-navegacion {
   padding: 2% 8%;
   display: flex;
   justify-content: space-between;
 }
-ul {
+
+.barraNav-lista {
   list-style-type: none;
   margin-top: 2rem;
 }
 
-li {
+.barraNav-elementos {
   display: inline;
   margin-left: 1.5rem;
 }
 
-a {
+.links {
   text-decoration: none;
   font-size: 1.6rem;
 }
 
 .logo h1 {
   color: #cb997e;
+  font-family: "Neonderthaw", cursive;
 }
 
 a:hover {
@@ -48,36 +54,163 @@ a:hover {
   transition: 0.5s ease-in-out;
 }
 
-.icono-menu {
+.icono {
   display: none;
 }
 
-@media only screen and (max-width: 768px) {
- .icono {
-   display: block;  
-   position: absolute;
-   right: 36px;
-   top: 26px; 
- }
- nav {
-   flex-direction: column;
- }
+.contenido-header {
+  width: 50%;
+  position: relative;
+  top: 16%;
+  left: 10%;
+}
 
-  nav ul {
-  background-color: beige;
-   display: none;
- }
+.titulosec {
+  font-size: 4rem;
+}
 
- nav ul li {
-   display: block;
-   padding: 1% 0;
- }
- nav ul li {
+.parrafo-principal {
+  font-size: 1.6rem;
+}
+
+.formulario-inscripcion {
+  margin-top: 3%;
+}
+
+.email {
+  font-size: 1.6rem;
+  width: 50%;
+}
+
+.suscribirse {
   display: block;
-  padding: 1% 0;
+  margin-top: 3%;
+  width: 50%;
+  font-size: 1.6rem;
+  background-color: blanchedalmond;
+  color: #cb997e;
+  border: 1px solid bisque;
 }
- 
 
-
+.contenedor-acerca {
+  display: flex;
+  justify-content: space-around;
 }
 
+.titulos {
+  color: black;
+  font-size: 3rem;
+}
+.subtitulos {
+  color: black;
+  font-size: 1.7rem;
+}
+.parrafo {
+  color: black;
+  font-size: 0.8rem;
+}
+.btn {
+  background-color: blanchedalmond;
+  color: #cb997e;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quienes-somos,
+.historia,
+.mision-vision {
+  width: 30%;
+}
+.foto-acerca {
+  width: 80%;
+}
+.contenedor-testimonio {
+  display: flex;
+  justify-content: space-between;
+  padding: 5rem;
+}
+.tarjeta-testimonio {
+  flex-basis: 50%;
+}
+.foto-perfil {
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  border: 2px solid blanchedalmond;
+}
+.datos-cliente {
+  display: flex;
+}
+.nombre-cliente {
+  padding: 2rem, 1.5rem;
+}
+.testimonios {
+  background-color: #cb997e;
+  text-align: center;
+}
+.contacto {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem;
+}
+.formulario-contacto {
+  display: flex;
+
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+}
+.formulario-contacto input {
+  width: 40rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+.formulario-contacto textarea {
+  width: 40rem;
+  height: 15rem;
+  color: black;
+  font-size: 1.6rem;
+}
+.formulario-contacto button {
+  width: 40rem;
+  margin-bottom: 1rem;
+}
+.pie-de-pagina {
+  background-color: blanchedalmond;
+  color: black;
+  text-align: end;
+  height: 3rem;
+}
+@media only screen and (max-width: 768px) {
+  .icono {
+    display: block;
+    position: absolute;
+    right: 36px;
+    top: 26px;
+  }
+  .barra-navegacion {
+    flex-direction: column;
+  }
+
+  .barra-navegacion ul {
+    background-color: beige;
+    display: none;
+  }
+
+  .mostrar {
+    display: block;
+  }
+
+  .barra-navegacion ul li {
+    display: block;
+    padding: 1% 0;
+  }
+
+  .barra-navegacion ul li a {
+    color: black;
+  }
+}
